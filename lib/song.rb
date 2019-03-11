@@ -37,7 +37,9 @@ class Song
   end
   
   def alphabetical
-    self.all.sort
+    songs = []
+    self.all.each{|song| songs << song.name
+    songs.sort
   end
   
   def self.destroy_all
