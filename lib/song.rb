@@ -46,6 +46,7 @@ class Song
     song = self.new
     song.name = filename_split[1]
     song.artist_name = filename_split[0]
+    song.save
   end
 
   def self.create_from_filename
