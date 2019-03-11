@@ -35,4 +35,9 @@ class Song
   def self.find_or_create_by_name(name)
     self.find_by_name(name) || self.create_by_name(name)
   end
+  
+  
+  def self.destroy_all
+    self.all.clear
+  end
 end
